@@ -1,0 +1,46 @@
+.row-1{
+    @media (max-width:400px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.aboutus-img{
+    height: 350px;
+    margin-top: 80px;
+
+    @media (max-width:(map-get($breakpoints,"md"))) {
+        height: 300px;
+        
+    }
+
+    @media (max-width:(map-get($breakpoints,"sm"))) {
+        height: 250px;
+        
+    }
+    @media (max-width:400px) {
+        height: 180px;
+        
+    }
+}
+.aboutus-text-heading{
+    font-size: 48px;
+    font-weight: map-get($map: $font-weight, $key: "bold" );
+   
+    &-content{
+        font-size: 18px;
+    }
+}
+.engagement-communication{
+    .ec-text-heading{
+        font-size: 24px;
+        font-weight: map-get($map: $font-weight, $key:"bold" );
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    .ex-text{
+        font-size: 18px;
+    }
+}
